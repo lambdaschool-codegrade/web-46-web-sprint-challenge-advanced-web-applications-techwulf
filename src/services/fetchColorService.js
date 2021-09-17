@@ -1,7 +1,7 @@
 import axiosWithAuth from '../helpers/axiosWithAuth';
 
 const fetchColorService = (setColors) => {
-  return axiosWithAuth()
+  axiosWithAuth()
     .get('/colors')
     .then(res => {
       setColors(res.data);
